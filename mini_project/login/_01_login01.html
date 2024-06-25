@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>식물나라 로그인</title>
+    <style>
+      
+
+
+        body {
+            font-family:Noto Sans Korean;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            width: 300px;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .input-container {
+            margin: 10px 0;
+          
+        }
+
+        .inputbox{
+           border: 0.5px solid #228B22;
+           border-radius: 4px;
+           
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .options {
+            margin: 15px 0;
+        }
+        .social-login {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .kakao {
+            background-color: #FFEB00;
+        }
+        .google {
+            background-color: #FFFFFF;
+            border: 1px solid #DDDDDD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="your-logo-url.png" alt="식물나라 로고">
+        </div>
+        <h2>식물나라</h2>
+        <div class="input-container">
+            <input class="inputbox" type="text" placeholder="아이디" required>
+        </div>
+        <div class="input-container">
+            <input class="inputbox" type="password" placeholder="비밀번호" required>
+        </div>
+        <button class="btn">로그인</button>
+        <div class="options">
+            <a href="#">비밀번호 찾기</a> | <a href="#">아이디 찾기</a> | <a href="#">회원가입</a>
+        </div>
+        <div>또는</div>
+        <button class="social-login kakao">
+            <img src="kakao-logo-url.png" alt="카카오톡 로고" style="height:20px; margin-right:10px;">
+            카카오로 시작하기
+        </button>
+        <button class="social-login google">
+            <img src="google-logo-url.png" alt="구글 로고" style="height:20px; margin-right:10px;">
+            Google로 시작하기
+        </button>
+    </div>
+</body>
+</html>
